@@ -1,0 +1,126 @@
+body {
+  background-color: lightgrey;
+  font-family: Arial, sans-serif;
+}
+.container {
+  background-color: #ffffff1a;
+  width: 80%;
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px 40px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px black;
+}
+
+.center {
+  text-align: center;
+}
+
+.radio-group {
+  border: 1px solid gray;
+  border-radius: 6px;
+  padding: 20px;
+  margin: 20px 0;
+}
+.radio-group legend {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+select {
+  border-radius: 6px;
+  color: blue;
+}
+
+label:not(.availability-group) {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+label:not(.availability-group){
+  display: block;
+  margin: 20px 0;
+}
+
+input:not(.avail-radio-btn), textarea, select {
+  background-color: #afffff7a;
+  width: 95%;
+  border: 1px solid red;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.avail-radio-btn {
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 2px solid gray;
+  vertical-align: bottom;  
+}
+
+.avail-radio-btn::before {
+  display: block;
+  content: " ";
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  transform: translate(3px, 3px) scale(0);
+  transition: all 0.3s ease-in;
+
+}
+
+.avail-radio-btn:checked::before {
+  transform: translate(3px, 3px) scale(1);
+  background-color: brown;
+}
+.radio-group input[type="radio"]:checked {
+  border-color: brown;
+  background-color: #2196F3;
+  box-shadow: 0 0 0 1px rgba(80, 90, 70, 0.1);
+}
+
+label {
+  cursor: pointer;
+}
+
+input[type="radio"]:checked + label {
+  color: #ff0000;
+}
+
+input, input::placeholder, textarea {
+  color: blue;
+}
+
+input:focus , textarea:focus {
+  border-color: midnightblue;
+}
+
+input:invalid, select:invalid, textarea:invalid {
+  border-color: red;
+}
+
+input:valid, select:valid, textarea:valid {
+  border-color: green;
+}
+
+input:first-of-type {
+  border: 4px solid green; 
+
+}
+
+.submit-btn {
+  cursor: pointer;
+  background-color: midnightblue;
+  color: whitesmoke;
+  border: none;
+  display: block;
+  width: 100%;
+  font-size: 1.1rem;
+  padding: 12px 20px;
+  margin: 10px auto;
+}
+
+button:hover {
+  background-color: orange;
+}
