@@ -1,0 +1,67 @@
+body {
+  text-align: center;
+  height: 100vh;
+  background-color: lightblue;
+
+}
+
+.feature-card-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  min-width: 300px;
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.feature-card {
+  display: block;
+  font-weight: 800;
+  background-color: #f0f0f0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  width: 200px;
+  height: 60px;
+  padding: 1em;
+  text-align: left;
+  cursor: pointer;
+}
+
+.feature-card:hover {
+  box-shadow: 0 0 30px rgba(255,255,255,0.8);
+  /* transform: translate(2px); */
+}
+
+input[type="checkbox"] {
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border: 2px solid black;
+  border-radius: 4px;
+  background-color: white;
+  color: yellow;
+  vertical-align: middle;
+  margin-left: 0.5em;
+}
+
+input[type="checkbox"]:hover {
+  cursor: pointer;
+}
+
+input[type="checkbox"]:checked {
+  background-color: lightblue;
+  border: 3px solid lightblue;
+
+}
+
+input[type="checkbox"]:checked::after {
+  content: "✓";
+  display: block;
+  font-weight: bold;
+  /* color: white; */
+  text-align: center;
+  background-color: green;
+  border-color: lightblue;
+
+}
