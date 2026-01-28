@@ -1,0 +1,73 @@
+body {
+  font-size: 2.5em;
+  font-weight: 600;
+  margin: 20px;
+  box-sizing: border-box;
+  background-color: lightblue;
+
+}
+#playing-cards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  min-width: 400px;
+  width: 1000px;
+  margin: 40px auto;
+}
+
+
+.card {
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid black;
+  width: 250px;
+  height: 400px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 15px 10px;
+}
+
+.card:hover {
+  transform: translate(-5px);
+
+}
+
+.left {
+  /* border: 1px solid black; */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-self: flex-start;
+  text-align: center;
+  
+}
+
+.middle {
+  /* border: 1px solid black; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-self: center;
+  font-size: 80px;
+}
+
+
+
+.right {
+  /* border: 1px solid black; */
+  display: flex;
+  flex-direction: column-reverse;
+  align-self: flex-end;
+  text-align: center;
+}
+
+
+.rotate {
+  transform: rotate(180deg);
+}
+
+[data-suit="hearts"], [data-suit="diamonds"] {
+  color: red;
+}
