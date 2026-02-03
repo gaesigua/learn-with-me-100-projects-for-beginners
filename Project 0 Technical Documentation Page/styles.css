@@ -1,0 +1,90 @@
+*{
+  margin: 0;
+}
+
+body {
+  font-family: "Segoe UI";
+  font-size: 1em;
+}
+
+header {
+  font-size: 2em;
+  font-weight: bold;
+  padding: 10px 0;
+  margin: 10px 0;
+}
+
+#navbar {
+  position: fixed;
+  width: 200px;
+  height: 100%; /* making the navbar span the full height of the viewport */
+  top: 0;
+  left: 0;
+  background-color: #333;
+  padding-top: 20px;
+  color: white;
+}
+
+#navbar header {
+  border-bottom: 2px solid black;
+  padding: 20px;
+  font-size: 1.2rem;
+}
+
+#navbar a {
+  border-bottom: 2px solid black;
+  display: block;
+  padding: 15px;
+  text-decoration: none;
+  color: white;
+}
+
+#navbar a:hover {
+  background-color: #575757;
+}
+
+#main-doc {
+  margin-left: 200px; /* Add a left margin equal to the navbar's width */
+  padding: 15px; /* Add padding for content spacing */
+}
+
+
+/* we can use flex by creating a container that holds all the elements
+
+.container {
+  display: flex;
+  min-height: 100vh;
+}
+
+#navbar {
+  width: 200px;
+  background-color: #333;
+  color: white;
+
+}
+
+/* we can use this if we choose to use flex in a container div */
+
+/*#main-doc {
+  flex-grow: 1;
+  padding: 15px;
+}
+
+*/
+
+code {
+  font-family: monospace; /* Ensure it uses a standard code font */
+  background-color: #f4f4f4; /* Add a light background color */
+  padding: 0.5em 0.5em; /* Add some space around the code snippet */
+  border-radius: 4px; /* Optional: adds rounded corners */
+  color: #333; /* Set text color */
+  margin: 10px 20px;
+  
+}
+
+@media screen and (max-width: 600px) {
+  /* CSS rules apply when the viewport width is 600px or less */
+  body {
+    background-color: lightblue;
+  }
+}
