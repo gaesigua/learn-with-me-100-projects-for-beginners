@@ -1,0 +1,69 @@
+*, ::before, ::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 90%;
+}
+
+body {
+  font-family: sans-serif;
+  color: #000000;
+  background-color: F2F2F2;
+}
+
+h1 {
+  background-color: #333333;
+  color: #ffffff; 
+  font-family: serif;
+  text-align: center;
+  padding: 1.1em;
+}
+
+.title {
+  grid-area: title;
+} 
+.feature-article {
+  grid-area: feature-article;
+  background-color: #f0f0f0;
+} 
+.cover-image {
+  grid-area: cover-image;
+}
+.secondary-article {
+  grid-area: secondary-article;
+  background-color: #f0f0f0;
+}
+.small-article1 {
+  grid-area: small-article1;
+  background-color: #eee;
+}
+
+.small-article2 {
+  grid-area: small-article2;
+  background-color: #eee;
+}
+
+.small-article3 {
+  grid-area: small-article3;
+  background-color: #eee;
+}
+
+.newspaper-layout {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto 1fr 1fr 1fr;
+  grid-template-areas: 
+  "title title title"
+  "feature-article feature-article cover-image"
+  "secondary-article secondary-article cover-image"
+  "small-article1 small-article2 small-article3";
+  gap: 3rem;
+
+}
+
+.cover-image img {
+  max-width: 100%;
+}
