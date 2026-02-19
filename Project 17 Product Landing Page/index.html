@@ -1,12 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
+  <head>
+    <meta charset="UTF-8" />
     <title>Product Landing Page</title>
-</head>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+
 <body>
-    
+    <header id="header">
+      <a href="/" class="logo"><img id="header-img" src="https://images.unsplash.com/photo-1601158935942-52255782d322?q=80&w=736&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="A Tesla Logo" />
+      </a>
+      <nav id="nav-bar">
+        <ul>
+          <li><a href="#vehicles" class="nav-link">Vehicles</a></li>
+          <li><a href="#energy" class="nav-link">Energy</a></li>
+          <li><a href="#charging" class="nav-link">Charging</a></li>
+        </ul>
+      </nav>
+    </header>
+    <section class="hero">
+      <video width="100%" id="video" autoplay muted loop playsinline fallback="https://images.unsplash.com/photo-1553260188-75a8d6205b6c?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="background-video"width=100%>
+        <source src="https://www.pexels.com/download/video/6117577/"></source>
+      </video>
+    </section>
+    <h1>TESLA</h1>
+    <section id="vehicles">
+      <h2>Model S</h2>
+      <img src="https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Model-S-Hero-Desktop-US-v2.jpg" alt="A Black Tesla Sedan" />
+      <ul>
+        <li>410
+mi
+Range (EPA est.)
+</li>
+        <li>1.99
+s
+0-60 mph1</li>
+        <li>
+1,020
+hp
+Peak Power
+        </li>
+      </ul>
+      <img src="https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Model-S-New-Interior-Desktop-NA.png" alt="the interior of a model s" />
+
+    </section>
+    <section id="energy">
+      <h2>Powerwall</h2>
+      <img src="https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/1M-Powerwalls-Powerwall-3-Hero-Desktop.png" alt="a tesla powerwall"/>
+      <ul>
+        <li>
+          6.7 GW
+Fleet Battery Power
+        </li>
+        <li>
+          17.3
+ TWh
+Fleet Energy Delivered
+
+        </li>
+        <li>
+          16,317
+ Years
+Fleet Outage Support
+        </li>
+      </ul>
+    </section>
+    <section id="charging">
+      <h2>Supercharger</h2>
+      <video >
+        <source src="https://digitalassets.tesla.com/tesla-contents/video/upload/f_auto,q_auto:best/Supercharger-Hero-Desktop.mp4" />
+        </source>
+        <ul>
+          <li>75,000+
+Global Superchargers
+
+</li>
+          <li>
+            15
+min
+Recharge up to 200 miles
+          </li>
+          <li>
+            $
+Less than gasoline
+          </li>
+        </ul>
+    </section>
+    <p>Handcrafted masterpieces</p>
+    <form id="form" action="https://www.freecodecamp.org/email-submit" method="POST">
+      <input name="email" id="email" type="email" placeholder="Enter your email address" />
+      <input id="submit" type="submit" value="Get Started"/>
+
+
+    </form>
+
 </body>
+
 </html>
