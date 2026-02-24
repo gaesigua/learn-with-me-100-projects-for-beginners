@@ -1,0 +1,123 @@
+body {
+	box-sizing: border-box;
+	font-family: Helvetica, sans-serif;
+	max-width: 1200px;
+	min-height: 100vh;
+	height: 100vh;
+	margin: 0;
+	padding-top: 60px;
+	overflow-x: hidden;
+}
+#navbar {
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  height: 64px;
+  background-color: #AAD6EC;
+  display: flex;
+  padding: 10px 0;
+  justify-content: space-evenly;
+  align-items: flex-end;
+  z-index: 1000;
+}
+#navbar a {
+  text-decoration: none;
+  color: #444444;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+#welcome-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background-color: #113065;
+  color: #E0E0E0;
+  padding: auto;
+  text-align: center;
+  
+}
+
+#project-section {
+  display: grid; grid-template-columns: repeat(3, 1fr);
+  /*grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));*/
+  width: 100vw;
+  gap: 20px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #AAD6EC;
+}
+
+#project-section h2 {
+  grid-column: 1/ span 3;
+  text-align: center;
+  padding-bottom: 5px;
+  border-bottom: 2px solid black;
+}
+.project-tile {
+  display: flex;
+  flex-direction: column; /* Stacks image and content below vertically inside the card */
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+  overflow: hidden;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  padding: 16px;
+}
+.project-tile img {
+  width: 100%;
+  height: 380px;
+  object-fit: cover;
+
+}
+.project-tile p {
+  padding: 0 15px;
+  margin: 10px 0;
+  font-weight: 600;
+}
+
+#contact {
+  width: 100vw;
+  overflow: auto;
+  background-color: #113065;
+  }
+
+#contact h2 {
+  font-size: 3em;
+  color: white;
+  text-align: center;
+  padding-bottom: 4px;
+  margin-top: 0;
+}
+
+#contact p {
+  color: white;
+  text-align: center;
+  margin-top: 0;
+  font-style: italic;
+  
+}
+
+.socials {
+  display: grid;
+  font-size: 3rem;
+  grid-template-columns: repeat(5, 1fr);
+}
+
+footer {
+  display: flex;
+  flex-direction: rows;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  width: 100vw;
+  background-color: #AAD6EC;
+
+}
+
+@media only screen and (max-width: 720px){
+  
+}
