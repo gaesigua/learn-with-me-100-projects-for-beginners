@@ -1,0 +1,41 @@
+main{
+    background-color: #eee;
+    width: 98%;
+    height: auto;
+    border-radius: 8px;
+}
+h1, #tribute-info {
+    text-align: center;
+}
+.text-div p{
+    text-align: center;
+}
+
+
+
+.text-div{
+    max-width: 60%;
+    margin: 20px auto;
+
+}
+#img-div{
+    background-color: white;
+    margin: 0;
+    padding: 10px auto;
+    width: 95%;
+}
+
+img{
+    margin: 0 auto;
+    max-width: 80%;
+    height: auto;
+}
+figure{
+    text-align: center;
+}
+main > p{
+    text-align: center;
+}
+h1, span {
+    font-weight: bold;
+}

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body class="poppins-regular">
+    <div class="big-container">
+      <header class="header">
+        <h1 id="title" class="text-center">freeCodeCamp Survey Form</h1>
+      <p id="description" class="text-center">We want to thank you for taking this time to help us improve this platform</p>
+  
+      </header>
+      
+      <form action="" id="survey-form">
+        <div class="form-group">
+            <label for="name" id="name-label"> Name </label><input id="name" type="text" placeholder="Ex: John Doe" class="input-format" required>
+        </div>  
+  
+        <div class="form-group">
+          <label for="email" id="email-label"> Email </label><input id="email" type="email" placeholder="Ex: johndoe@gmail.com" class="input-format" required>
+        </div>   
+  
+        <div class="form-group">
+          <label for="number" id="age-label"> Age (optional) </label><input id="age" type="number" min="15" max="99" placeholder="Ex: 18" class="input-format">
+        </div>
+  
+        <div class="form-group">
+          <label for="residence-dropdown">Where do you reside?</label>
+            <select id="residence-dropdown" class="input-format">
+              <option value="kicukiro">Kicukiro</option>
+              <option value="gasabo">Gasabo</option>
+              <option value="nyarugenge">Nyarugenge</option>
+          </select>
+        </div>
+  
+        <div class="form-group">
+          <label>What is Your American favorite sport?
+              <select id="dropdown" class="input-format">
+                <option value="">Select one option</option>
+                <option value="nba">NBA</option>
+                <option value="nfl">NFL</option>
+                </select>
+        </div>
+        <div class="form-group">
+          <p>What is your gender?</p>
+            <label for="female"><input id="female" type="radio" name="gender" value="female" checked> Female</label>
+            <label for="male"><input id="male" type="radio" name="gender" value="male"> Male</label>
+        </div>
+        <div class="form-group">
+          <label>What is your favorite food?</label>
+            <label for=""><input type="checkbox" name="" id="rice" class="input-checkbox" checked>Rice</label>
+            <label for=""><input type="checkbox" name="" id="irish-potatoes" class="input-checkbox">Irish Potatoes</label>
+            <label for=""><input type="checkbox" id="meat" class="input-checkbox">Meat</label>
+            <label for=""><input type="checkbox" name="" id="ugali" class="input-checkbox">Ugali</label>
+        </div>
+        <div>
+          <label for="comment" id="comment-label">Add any additional thoughts, please</label>
+            <textarea id="comment" name="" id="" placeholder="Ex: We would like to have more extra-curricular activities"  class="input-textarea"></textarea>
+        </div>
+        <div class="form-group">
+          <button type="submit" class="submit-btn">Submit</button>
+        </div>
+        
+      </form>
+
+    </div>
+    
+  </body>
+  </html>
